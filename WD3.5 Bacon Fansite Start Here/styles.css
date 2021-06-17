@@ -1,5 +1,5 @@
 /* ------------------------------------ TAG SELECTORS---------------------------------*/
-
+/* pseudo selector :hover */
 img:hover{
     background-color: burlywood;
 }

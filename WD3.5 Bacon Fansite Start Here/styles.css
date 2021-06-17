@@ -1,0 +1,23 @@
+/* ------------------------------------ TAG SELECTORS---------------------------------*/
+
+img:hover{
+    background-color: burlywood;
+}
+
+h1{
+    color:red;
+}
+
+/*-------------------------------------- Class Selector ------------------------------*/
+.bacon{
+    background-color: green;
+}
+.broccoli{
+    background-color: red;
+}
+
+/*---------------------------------------ID selector---------------------------------*/
+/*-- Id selector to element is only one and one id selector we can not assign to others like class*/
+#heading{
+    font-style: oblique;
+}

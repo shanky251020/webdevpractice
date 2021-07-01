@@ -14,6 +14,7 @@ let z =40; // Block variable
 
 // Example of Global variable, function variable and block variable 
 
+/*
 function fun()
 {
     let a =5;
@@ -51,6 +52,26 @@ var banana = function()   // This type of function does not hoist
 {
     console.log("Hello sunday");
 }
+*/
 
 // apple();  This type of function calling works
 // banana(); This type of function calling works 
+
+let arr= ["Apple","Mango","Guava"];
+for(let i=0;i<arr.length;i++)
+{
+    console.log(arr[i]);
+}
+arr.push("Strawberry");  // This line adds item at the last
+console.log(arr);
+
+arr.pop();  // This line removes element from the last 
+console.log(arr);
+
+arr.unshift("Cheeku");  // This adds element in the front
+console.log(arr);
+
+arr.shift();  // This removes the element from the front
+console.log(arr);
+
+console.log(arr.indexOf("Apple"));  // This returns the element location or index

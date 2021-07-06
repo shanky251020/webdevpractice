@@ -16,6 +16,11 @@ window.onload = function()      //Fires immediately after the browser loads the 
         {
              listHTML += '<li>'+ i + '</li>' // We are not directly printing into dom , it improved the performance as we are just keeping the value and it is not printing again and again 
           //  list.innerHTML += '<li>' + i + '</li>' costly
+          
+        // below syntax boosts the performance
+        /*  let item = document.createElement('li')
+          item.innerText = i;
+          list.appendChild(item); */
         }
         list.innerHTML = listHTML;
         console.log(new Date().getTime() - start)

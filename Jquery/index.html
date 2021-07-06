@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <!-- we use jquery selector like css by typing name-->
+    <div id="one"  class ="item">Something</div>
+    <div class="item">Something</div>
+    <div id="three" class="item">Something</div>
+    <div>Something</div>
+    <div class="item">Something</div>
+    <div id="three" class="item">Something</div>
+    <div>Something</div>
+</body>
+</html>
+
+<!-- Jquery selectors
+$('div')  -- op as all the divs
+$('div.item') -- op as all the divs with item class
+$('#one').text('hello world') -- o/p as id one is changed to hello world
+
+$('#one') == document.getElementById('one')
+
+document.... gives the whole element
+$ ... gives the first element of an array of element , it doesnot gets all the element it acts like a wrapper
+ o/p  false
+$('#one')[0] == document.getElementById('one')
+0/p : true
+
+document.getElementById('contents'); //returns a HTML DOM Object
+
+var contents = $('#contents');  //returns a jQuery Object
+
+var contents = $('#contents')[0]; //returns a HTML DOM Object
+-->

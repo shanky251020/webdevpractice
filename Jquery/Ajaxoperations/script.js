@@ -6,7 +6,11 @@ $.get(`https://reqres.in/api/users?page=2`,(data)=>{     // for asynchronous cal
 for(let p of data.data)
 {
     list.append(
-        $(`<li>${p.first_name}</li>`)
+       
+        $(`<li>
+        <img width='200' src="${p.avatar}">
+        ${p.first_name}
+        </li>`)
     )
 }
 })

@@ -11,18 +11,18 @@ let loopid = setInterval(() => {
 
 }
 
-helloSayer(3,'Shashank')
-helloSayer(4,'Arnav')
-/* o/p
-helloShashank
-helloArnav
-helloShashank
-helloArnav
-helloShashank
-helloArnav
-helloArnav
-*/
+helloSayer(3,'Arnav')
+helloSayer(4,'Prateek')
 module.exports={
     helloSayer
 }
 
+/*
+Hello Arnav
+Hello prateek
+Hello Arnav
+Hello Prateek
+Hello Arnav
+Hello Prateek
+Hello prateek
+*/

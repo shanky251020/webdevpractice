@@ -13,9 +13,7 @@ let loopid = setInterval(() => {
 
 helloSayer(3,'Arnav')
 helloSayer(4,'Prateek')
-module.exports={
-    helloSayer
-}
+
 
 /*
 Hello Arnav

@@ -1,0 +1,21 @@
+/*
+* h1 - is called selector .Anything that matches this selector is going to have everything inside the { } applied to it.
+* color - This is called property , In this case we are telling the color to be red.
+* red - It is the value of the property . Css also understands hex, hsl, rgb .
+* ;-  Every  Property will end with a semicolon , to show the end or period 
+*/
+
+/* h1{
+    color:red;
+} */
+
+h1{
+    color:limegreen;
+    font-size:60px;
+    font-weight:normal;
+    text-decoration:underline;
+    text-transform:uppercase;
+    border:20px solid pink;
+    padding:20px;
+    margin:25px;
+}

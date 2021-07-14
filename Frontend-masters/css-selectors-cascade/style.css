@@ -1,0 +1,90 @@
+/* This is the consensus in frontend dev that 
+classes are the best option to style html page 
+and not use tags unless like a tag you have to style same in full page which is rare */
+
+
+.brand-title{
+    color:red;
+}
+
+.blog-post-title{
+    color:green;
+}
+
+
+/* Now some cascading rules 
+* Here in the first example of title , there are two rules with the same class and the last one wins
+*-- First of all, yes, one tag can have multiple classes, and that can be useful.
+ Okay, so what is this going to look like? In the eyes of CSS, those two selectors are equal since they both have the same specificity (key word, you'll see it used a lot when talking about CSS.) 
+ They both (specific) one class which makes them equal. 
+ So in this case, since .title comes last in the CSS, it wins. 
+ The color will be green. What about the border? Since .title doesn't conflict, it'll have a black border too. 
+ So keep in mind that each of these "conflicts" is resolved on a property-by-property basis.
+ So the end result in an h1 that has a black border and green font.
+ Specificity rule for simplifying stuff -- ids - 100 , class -10 , tags - 1 
+*/
+.title{
+    color : green;
+}
+
+.title{
+    color : red;
+}
+
+.main-brand-2{
+    border: 1px solid black;
+    color:green;
+}
+.title-2{
+    color:crimson;
+}
+/* Here .main-brand-3.title-3 is more specific despite .title-3 comes at last style is applied orange  */
+.main-brand-3.title-3{
+    color:orange;
+}
+.title-3{
+    color:darkblue;
+}
+
+/*ID's and !important */
+/* You would think by how long the second class is, it'd win. Not the case.
+ ID selectors (#site-brand) win over class selectors.
+  If tags are the one place and classes are the tens place, then IDs are the hundred place.
+   Using that, the first one is 100 and the second is 31.
+    Again, keep in mind this is just useful for a quick device to look at specificity.
+ Still one ID is greater than ten classes.*/
+#site-brand {
+    color: red;
+  }
+
+  h1.nav-head.nav-main.other-useful-class {
+    /*
+     * this class is way too specific; never have a class selector so long
+     * it's ridiculous and just to illustrate a point
+     */
+    color: green;
+  }
+
+  /* !important */
+ /* The h1's color is going to be green but the border is going to be red. */
+  #site-brand-2 {
+    color: red;
+    border: 1px solid red;
+  }
+
+  .nav-head-2 {
+    color: green !important;
+    border: 1px solid green;
+  }
+/* Pseudo-classes example :hover */
+  .hover-example {
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    color: white;
+  }
+  .hover-example:hover {
+    background-color: crimson;
+    width: 150px;
+    height: 150px;
+  }
